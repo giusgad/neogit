@@ -114,6 +114,7 @@ M.reword = operation("rebase_reword", function(popup)
   end
 
   git.rebase.reword(commit, new_message)
+  status.refresh(nil, "rebase_reword")
 end)
 
 M.modify = operation("rebase_modify", function(popup)
